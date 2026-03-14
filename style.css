@@ -7,23 +7,34 @@ body{
     width: auto;
     min-height: 100vh;
     flex: 1;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.left-side .first-button{
+    padding: 10px 20px;
+    width: auto;
+    display: inline-block;
 }
 
 .button{
-    padding: 12px 24px;
-    border-radius: 5px;
-    width: auto;
-    flex-shrink: 0;
-    white-space: nowrap;
+    color: #fff;
+    font-family: 'Roboto', arial;
+    border-color: #fff;
+    border-radius: 8px;
+    background-color: #3882F6;
+    padding: 5px 35px;
+    font-size: 15px;
 }
 
 .Header{
     background-color: #1F2937;
     display: flex;
     justify-content:space-between;
+    align-items: center;
     width: 100%;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 100px 20px 100px;
+    box-sizing:border-box;
 }
 
 
@@ -33,8 +44,8 @@ body{
 }
 .Header-Links{
     display: flex;
-    padding: 0px 100px 0px 0px;
     gap: 10px;
+    align-self: center;
 }
 
 a{
@@ -48,8 +59,27 @@ a{
     width: 100%;
     display: flex;
     flex: 1;
-    padding: 20px;
+    padding: 100px;
+    justify-content: space-between;
+    padding-bottom: 75px;
+    box-sizing: border-box;
+}
 
+.left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 400px;
+    flex-wrap: wrap;
+    
+}
+
+.Main-Text{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    align-self: flex-start;
 }
 
 
@@ -58,33 +88,54 @@ a{
     flex-direction: column;
     align-items: center;
     flex: 1;
+
+    
 }
 
 .block-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box-container{
     display: flex;
-
     justify-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+  
+}
+
+.card h3{
+    width: 300px;
+    text-align: center;
 }
 
 .square{
     height: 150px;
     width: 150px;
     background-color: blue;
+    flex-wrap: wrap;
+    border: 4px solid #3882F6;
+    border-radius: 10px;
+    align-self: center;
+    object-fit: cover;
 
 }
 
 .third-block{
     flex: 1;
     background-color: #E5E7EB;
-    padding: 0px 400px;
+    padding: 0px 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 0px;
 }
 
 .quote{
@@ -92,13 +143,17 @@ a{
     font-weight: 300;
     margin-right: auto;
     text-align: left;
+    gap: 0px;
+    margin-bottom: 0;
 }
-
 .from{
     font-size: 16px;
     font-weight: 900;
     color: black;
     margin-left: auto;
+    align-self: flex-start;
+    gap: 0px;
+    margin-top: 0;
 }
 
 .fourth-block{
@@ -127,7 +182,7 @@ a{
     font-size: 18px;
 }
 
-.second-button{
+button{
     background-color: #3882F6;
     color: #F9FAF8;
     border-color: #F9FAF8;
